@@ -4,17 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID-19 Resources</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>COVID-19 Resources</h1>
+<body class="bg-light">
 
-    <ul>
-        <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO COVID-19 Updates</a></li>
-        <li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">NHS COVID-19 Guidelines</a></li>
-        <li><a href="https://coronavirus.data.gov.uk/">UK Government COVID-19 Dashboard</a></li>
-        <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/">CDC COVID-19 Resources</a></li>
-    </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">COVID-19 Dashboard</a>
+            
+            <!-- Navbar Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <a href="index.html">Back to Dashboard</a>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">Visualizations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">COVID-19 Map</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More Options
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <h1 class="text-center text-danger">COVID-19 Resources</h1>
+
+        <p class="text-center">Find the latest updates and resources on COVID-19 from reliable sources.</p>
+
+        <div class="list-group">
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class="list-group-item list-group-item-action">
+                🌍 WHO COVID-19 Updates
+            </a>
+            <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/" class="list-group-item list-group-item-action">
+                🇬🇧 NHS COVID-19 Guidelines
+            </a>
+            <a href="https://coronavirus.data.gov.uk/" class="list-group-item list-group-item-action">
+                📊 UK Government COVID-19 Dashboard
+            </a>
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/" class="list-group-item list-group-item-action">
+                🇺🇸 CDC COVID-19 Resources
+            </a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
